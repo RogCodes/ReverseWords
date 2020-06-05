@@ -1,10 +1,10 @@
 function revers(str) {
-  if (str.length < 1) {
-    console.log("Text Tidak Boleh Kosong");
+  if (str.split(' ').length < 2) {
+    console.log("Text Tidak Boleh Kosong / Kurang Dari 2");
     return false;
   }
 
-  console.log(str.split("").reverse().join(""));
+  console.log(str.split(' ').reverse().join(' '));
 }
 
-revers("mas nakam");
+revers('saya makan bakso');
